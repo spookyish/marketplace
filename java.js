@@ -1,10 +1,10 @@
 // Items data
 const items = [
     {
-        title: "Vintage Chair",
-        price: 50,
+        title: "Lucy",
+        price: 100,
         image: "item1.jpg",
-        description: "A beautiful vintage chair with intricate carvings and plush velvet upholstery.",
+        description: "Cute 4lb Tea Cup Yorkie.",
         count: 0
     },
     {
