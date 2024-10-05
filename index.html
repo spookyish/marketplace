@@ -23,29 +23,25 @@
         <!-- Items will be dynamically added here -->
     </main>
 
-    <form action="https://formspree.io/f/xwpkeoge" method="POST">
-  <label for="first-name">First Name:</label>
-  <input type="text" name="first-name" id="first-name" placeholder="Your First Name" required autocomplete="off">
-
-  <label for="last-name">Last Name:</label>
-  <input type="text" name="last-name" id="last-name" placeholder="Your Last Name" required autocomplete="off">
-
-  <label for="email">Your email:</label>
-  <input type="email" name="email" id="email" placeholder="email@domain.tld" required autocomplete="off">
-
-  <label for="phone">Phone Number:</label>
-  <input type="tel" name="phone" id="phone" placeholder="Your Phone Number" autocomplete="off">
-
-  <label for="items-interested">Item(s) of Interest:</label>
-  <textarea rows="5" name="items-interested" id="items-interested" placeholder="List the item(s) that you are interested in" required></textarea>
-
-  <label for="message">Your message:</label>
-  <textarea rows="5" name="message" id="message" placeholder="Enter your message here" required></textarea>
-
-  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-
-  <button type="submit">Send</button>
-</form>
+    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xwpkeoge" method="post" class="contact-form">
+        <button type="button" class="close" onclick="toggleForm()">×</button>
+        <fieldset id="fs-frm-inputs">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" placeholder="Your First Name" required="" autocomplete="off">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Your Last Name" required="" autocomplete="off">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="email@domain.tld" required="" autocomplete="off">
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" placeholder="Your Phone Number" autocomplete="off">
+            <label for="message">Item(s) of Interest</label>
+            <textarea rows="5" name="items-interested" id="items-interested" placeholder="List the item(s) that your are interested in" required=""></textarea>
+            <label for="message">Message</label>
+            <textarea rows="5" name="message" id="message" placeholder="Enter your message here" required=""></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
 
     <footer>
         <!-- Shopping Cart Container -->
